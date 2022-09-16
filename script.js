@@ -5,6 +5,8 @@ const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
+const DARK_THEME = 'dark'
+const LIGHT_THEME = 'light'
 
 
 // CODE DRY, DON'T REPEAT YOURSELF LET'S CLEAN THINGS UP
@@ -35,11 +37,11 @@ function switchTheme(event){
     if(event.target.checked){
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
-        toggleDarkLightMode(true);
+        toggleDarkLightMode('dark');
     }else{
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
-        toggleDarkLightMode(false);
+        toggleDarkLightMode('light');
     }
 }
 
@@ -53,6 +55,6 @@ if (currentTheme) {
 
     if(currentTheme === 'dark'){
         toggleSwitch.checked = true;
-        toggleDarkLightMode(true);
+        toggleDarkLightMode('dark');
     }
 }
