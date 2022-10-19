@@ -6,7 +6,7 @@
 
 # light-and-dark-mode
 A simple web project on how to toggle between light and dark mode on a website. Changes include the color palette, icons, backgrounds, and illustrations.
-The website will also remember what's the last theme the user have chosen via localHost.
+The website will also remember what's the last theme the user have chosen via localStorage.
 
 ## Resource and references used:
 - https://blog.prototypr.io/how-to-design-a-dark-theme-for-your-android-app-3daeb264637
